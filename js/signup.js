@@ -7,7 +7,7 @@ function validateemail(email) {
   }
   else {
     console.log("cgxvgv")
-    document.getElementById('email').innerText = "invalid..!";
+    document.getElementById('email').innerText = "**invalid..!";
     return false;
   }
 }
@@ -19,7 +19,7 @@ let check = phoneno.test(mob);
     return true;
   }
   else {
-    document.getElementById('phone').innerText = "invalid!";
+    document.getElementById('phone').innerText = "**Invalid !";
     return false;
   }
 }
@@ -27,21 +27,21 @@ function validatepassword (password) {
   // if (password != "" ){
     var re = /[0-9]/;
     if (password.length < 8) {
-      document.getElementById('password').innerText = "Error: Password must contain at least eight characters!";
+      document.getElementById('password').innerText = "** Password must contain at least eight characters!";
       return false;
     }
     if (!re.test(password) ){
-      document.getElementById('password').innerText = "Error: password must contain at least one number (0-9)!";
+      document.getElementById('password').innerText = "**password must contain at least one number (0-9)!";
       return false;
     }
     re = /[a-z]/;
     if (!re.test(password)) {
-      document.getElementById('password').innerText = "Error: password must contain at least one lowercase letter (a-z)!";
+      document.getElementById('password').innerText = "** password must contain at least one lowercase letter (a-z)!";
       return false;
     }
     re = /[A-Z]/;
     if (!re.test(password)) {
-      document.getElementById('password').innerText = "Error: password must contain at least one uppercase letter (A-Z)!";
+      document.getElementById('password').innerText = "**password must contain at least one uppercase letter (A-Z)!";
       return false;
     }
   
@@ -59,7 +59,7 @@ function validateconfirm(password,conpassword) {
     return true;
   }
   else {
-    document.getElementById('conpassword').innerText = "Password not Match";
+    document.getElementById('conpassword').innerText = "**Passwords not match";
     return false;
   }
 }
@@ -69,7 +69,7 @@ function vaidatefirstname(fname) {
     return true;
   }
   else {
-    document.getElementById('fname').innerText = "Enter Name"
+    document.getElementById('fname').innerText = "**Enter your first name"
   }
 }
 function validatelastname(lname) {
@@ -78,7 +78,7 @@ function validatelastname(lname) {
     return true;
   }
   else {
-    document.getElementById('lname').innerText = "Enter Name"
+    document.getElementById('lname').innerText = "**Enter your last name"
   }
 }
 function vaidategender(gender) {
@@ -87,7 +87,7 @@ function vaidategender(gender) {
     return true;
   }
   else {
-    document.getElementById('gender').innerText = "Please select gender"
+    document.getElementById('gender').innerText = "**Please select gender"
   }
 }
 function validatedob(dob) {
@@ -96,7 +96,7 @@ function validatedob(dob) {
     return true;
   }
   else {
-    document.getElementById('dob').innerText = "Enter DOB"
+    document.getElementById('dob').innerText = "**Please enter your DOB"
   }
 }
 function validateAddress(addr) {
@@ -106,7 +106,7 @@ function validateAddress(addr) {
     return true;
   }
   else {
-    document.getElementById('address').innerText = "Enter Address"
+    document.getElementById('address').innerText = "**Please enter your address"
   }
 }
 function validForm() {
