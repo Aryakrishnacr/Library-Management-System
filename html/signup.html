@@ -20,7 +20,7 @@
       <span class="navbar-text">LIBRARY</span>
       <ul class="navbar-nav w-100">
         <li class="nav-item ">
-          <a class="nav-link active" href="#">HOME</a>
+          <a class="nav-link active" href="index.html">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#">ABOUT</a>
@@ -32,8 +32,8 @@
           <a class="nav-link" href="#">MEMBERS</a>
         </li>
         <div class="nav-item ml-auto  " id="topnav-right">
-          <button id="button">SIGNUP</button>
-          <button id="button">LOGIN</button>
+          <button id="button" onclick="location.href='signup.html'">SIGNUP</button>
+          <button id="button" onclick="location.href='login.html'">LOGIN</button>
         </div>
       </ul>
     </div>
@@ -59,12 +59,12 @@
         <input type="password" class="input" id="pswd">
 
       </div>
-      <span class="error3" id="password"></span>
+      <span class="text-danger font-weight-bold" id="password"></span>
       <div class="inputfield">
         <label>Confirm Password</label>
         <input type="password" class="input" id="conpswd">
       </div>
-      <span class="error" id="conpassword"></span>
+      <span class="text-danger font-weight-bold" id="conpassword"></span>
       <div class="inputfield">
         <label>Gender</label>
         <div class="custom_select">
@@ -74,29 +74,29 @@
             <option value="female">Female</option>
             <option valuess="transgender">transgender</option>
           </select>
-          <span class="error4" id="gender"></span>
+          <span class="text-danger font-weight-bold" id="gender"></span>
         </div>
       </div>
       <div class="inputfield">
         <label for="birthday">D O B:</label>
         <input type="date" class="input" id="dateofbirth">
       </div>
-      <span class="error5" id="dob"></span>
+      <span class="text-danger font-weight-bold" id="dob"></span>
       <div class="inputfield">
         <label>Email Address</label>
         <input type="text" class="input" id="mail">
       </div>
-      <span class="error6" id="email"></span>
+      <span class="text-danger font-weight-bold" id="email"></span>
       <div class="inputfield">
         <label>Phone Number</label>
         <input type="text" class="input" id="number">
       </div>
-      <span class="error7" id="phone"></span>
+      <span class="text-danger font-weight-bold" id="phone"></span>
       <div class="inputfield">
         <label>Address</label>
         <textarea class="textarea" id="adrss"></textarea>
       </div>
-      <span class="error8" id="address"></span>
+      <span class="text-danger font-weight-bold" id="address"></span>
       <div class="inputfield">
         <input type="submit" value="SIGNUP" class="btn">
       </div>
